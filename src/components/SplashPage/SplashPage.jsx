@@ -8,7 +8,7 @@ const SplashPage = ({ children }) => {
 		// Fix bug causing jittery animation
 		setTimeout(() => {
 			setMounted(true);
-		}, 0);
+		}, 100);
 	}, []);
 
 	return (
