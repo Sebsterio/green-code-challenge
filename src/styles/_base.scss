@@ -1,0 +1,19 @@
+body {
+	font-family: "Gotham", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	width: 100vw;
+	overflow-x: hidden;
+	overscroll-behavior: none;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+		monospace;
+}
