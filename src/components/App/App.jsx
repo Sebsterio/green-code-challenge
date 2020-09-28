@@ -1,13 +1,15 @@
-import React from "react";
+import React, { Suspense } from "react";
 import AuthPage from "components/AuthPage";
 
 const App = () => {
 	return (
-		<div className="App">
-			<main>
-				<AuthPage />
-			</main>
-		</div>
+		<Suspense fallback={null}>
+			<div className="App">
+				<main>
+					<AuthPage />
+				</main>
+			</div>
+		</Suspense>
 	);
 };
 

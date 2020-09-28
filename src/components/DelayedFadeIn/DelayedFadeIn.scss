@@ -2,11 +2,12 @@
 	transition-delay: 400ms;
 	transition-duration: 400ms;
 
+	transform-origin: center left;
+	transform: translateX(-5%) scale(0.8);
 	opacity: 0;
-	transform: translateX(-4%);
 }
 
 .active .DelayedFadeIn {
-	opacity: 1;
 	transform: none;
+	opacity: 1;
 }
