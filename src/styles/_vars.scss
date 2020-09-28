@@ -1,0 +1,32 @@
+// Colors
+
+$color-page-background: rgb(250, 250, 250);
+$color-background: rgb(255, 255, 255);
+
+$color-primary: rgb(54, 168, 224);
+
+$color-text: rgb(128, 128, 128);
+$color-text-strong: rgb(65, 61, 63);
+$color-text-weak: rgb(155, 155, 155);
+
+// Box-shadoow
+
+$box-shadow-container: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+
+$box-shadow-item: 0 0 2px 0 rgba(0, 0, 0, 0.15);
+$box-shadow-item-strong: 0 0 4px 0 rgba(0, 0, 0, 0.15);
+$box-shadow-item-inset: inset 0 0 2px 0 rgba(0, 0, 0, 0.2);
+
+$box-shadow-primary: 0 0 2px 0 $color-primary;
+
+// Spacing
+
+$spacing-s: 0.5rem;
+$spacing-m: 1rem;
+$spacing-l: 1.3rem;
+$spacing-xl: 2rem;
+
+// Radius
+
+$radius-1: 3px;
+$radius-2: 5px;

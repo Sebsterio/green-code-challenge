@@ -1,0 +1,29 @@
+@import "../../styles/vars";
+
+.Submit {
+	margin-top: $spacing-xl;
+
+	&__button {
+		padding: $spacing-s $spacing-l;
+		background-color: $color-background;
+		border: none;
+		outline: none;
+		border-radius: $radius-2;
+		box-shadow: $box-shadow-item;
+		font-size: 0.7rem;
+		color: $color-text;
+
+		transition: all 0.2s;
+
+		&:hover,
+		&:focus {
+			box-shadow: $box-shadow-item-strong;
+		}
+
+		&:active {
+			box-shadow: $box-shadow-item-inset;
+			color: $color-text-strong;
+			background-color: $color-page-background;
+		}
+	}
+}

@@ -1,0 +1,65 @@
+@import "../../styles/vars";
+
+@mixin checkbox-base {
+	border-radius: $radius-1;
+	transition: all 0.2s;
+}
+
+.Checkbox {
+	&:not(:last-child) {
+		margin-bottom: $spacing-m;
+	}
+
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+
+	@supports (-webkit-appearance: none) or (-moz-appearance: none) {
+		&__input {
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			@include checkbox-base();
+			height: 0.8rem;
+			width: 0.8rem;
+			outline: none;
+			position: relative;
+			cursor: pointer;
+			border: 2px solid $color-primary;
+
+			&:checked {
+				background-color: $color-primary;
+				box-shadow: $box-shadow-primary;
+			}
+
+			&:after {
+				content: "";
+				display: block;
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+				@include checkbox-base();
+				height: 0.5rem;
+				width: 0.5rem;
+				background: url("../../images/tick.svg");
+			}
+
+			&:not(:checked):after {
+				opacity: 0;
+			}
+
+			&:hover,
+			&:focus {
+				box-shadow: $box-shadow-primary;
+			}
+		}
+	}
+
+	&__label {
+		flex: 1;
+		margin-left: $spacing-s;
+		color: $color-text;
+		font-weight: bold;
+		font-size: 0.6rem;
+	}
+}
