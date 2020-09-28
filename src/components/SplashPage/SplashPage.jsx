@@ -5,10 +5,7 @@ const SplashPage = ({ children }) => {
 	const [mounted, setMounted] = useState(false);
 
 	useEffect(() => {
-		// Fix bug causing jittery animation
-		setTimeout(() => {
-			setMounted(true);
-		}, 100);
+		setMounted(true);
 	}, []);
 
 	return (
