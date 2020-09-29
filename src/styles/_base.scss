@@ -1,3 +1,17 @@
+@import "./vars";
+
+html {
+	font-size: 12px;
+
+	@media (min-width: $screen-xs) {
+		font-size: 14px;
+	}
+
+	@media (min-width: $screen-s) {
+		font-size: 16px;
+	}
+}
+
 body {
 	font-family: "Gotham", sans-serif;
 	-webkit-font-smoothing: antialiased;
@@ -5,7 +19,6 @@ body {
 	width: 100vw;
 	overflow-x: hidden;
 	overscroll-behavior: none;
-	font-size: 16px;
 }
 
 * {

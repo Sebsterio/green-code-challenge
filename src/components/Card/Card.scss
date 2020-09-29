@@ -3,10 +3,18 @@
 .Card {
 	width: 95vw;
 	max-width: 31rem;
-	padding: $spacing-xl;
+	padding: $spacing-xl $spacing-m;
 	box-shadow: $box-shadow-container;
 	text-align: left;
 	background-color: $color-background;
+
+	@media (min-width: $screen-xs) {
+		padding: $spacing-xl $spacing-l;
+	}
+
+	@media (min-width: $screen-s) {
+		padding: $spacing-xl;
+	}
 
 	&__header {
 		margin-bottom: $spacing-m;
@@ -17,7 +25,8 @@
 	}
 
 	&.animateOnEnter {
-		transition: all $duration-medium $timing-bounce;
+		transition: opacity $duration-medium $timing-bounce,
+			transform $duration-medium $timing-bounce;
 		opacity: 0;
 		transform: scale(0.8);
 	}
