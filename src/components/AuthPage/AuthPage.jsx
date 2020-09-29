@@ -17,35 +17,35 @@ const AuthPage = () => {
 
 	return (
 		<SplashPage>
-			<Card
-				animateOnEnter
-				header={
-					<DelayedFadeIn>
-						<Logo />
-					</DelayedFadeIn>
-				}
-				main={
-					<>
-						<Typography
-							heading="Example login screen"
-							subheading="Getting started with Green."
-						/>
+			<form onSubmit={signIn}>
+				<Card
+					animateOnEnter
+					header={
+						<DelayedFadeIn>
+							<Logo />
+						</DelayedFadeIn>
+					}
+					main={
+						<>
+							<Typography
+								heading="Example login screen"
+								subheading="Getting started with Green."
+							/>
 
-						<form onSubmit={signIn}>
 							<Input name="email" type="email" autoFocus>
 								Email Address
 							</Input>
 
 							<Checkbox name="remember">Remember this device</Checkbox>
-						</form>
-					</>
-				}
-				footer={
-					<DelayedFadeIn>
-						<Submit>Sign in</Submit>
-					</DelayedFadeIn>
-				}
-			/>
+						</>
+					}
+					footer={
+						<DelayedFadeIn>
+							<Submit>Sign in</Submit>
+						</DelayedFadeIn>
+					}
+				/>
+			</form>
 		</SplashPage>
 	);
 };
