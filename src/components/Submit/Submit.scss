@@ -1,8 +1,7 @@
 @import "../../styles/vars";
 
+// Using a container because the alignment of the button could be customizable
 .Submit {
-	margin-top: $spacing-xl;
-
 	&__button {
 		padding: $spacing-s $spacing-l;
 		background-color: $color-background;

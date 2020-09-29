@@ -1,0 +1,29 @@
+@import "../../styles/vars";
+
+.Card {
+	width: 95vw;
+	max-width: 31rem;
+	padding: $spacing-xl;
+	box-shadow: $box-shadow-container;
+	text-align: left;
+	background-color: $color-background;
+
+	&__header {
+		margin-bottom: $spacing-m;
+	}
+
+	&__footer {
+		margin-top: $spacing-xl;
+	}
+
+	&.animateOnEnter {
+		transition: all $duration-medium $timing-bounce;
+		opacity: 0;
+		transform: scale(0.8);
+	}
+}
+
+.active .Card.animateOnEnter {
+	opacity: 1;
+	transform: none;
+}
