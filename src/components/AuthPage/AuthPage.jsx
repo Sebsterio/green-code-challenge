@@ -18,6 +18,7 @@ const AuthPage = () => {
 	return (
 		<SplashPage>
 			<Card
+				animateOnEnter
 				header={
 					<DelayedFadeIn>
 						<Logo />
