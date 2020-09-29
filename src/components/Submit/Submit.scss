@@ -10,10 +10,10 @@
 		outline: none;
 		border-radius: $radius-2;
 		box-shadow: $box-shadow-item;
-		font-size: 0.7rem;
+		font-size: $sizing-m;
 		color: $color-text;
 
-		transition: all 0.2s;
+		transition: all $duration-short;
 
 		&:hover,
 		&:focus {

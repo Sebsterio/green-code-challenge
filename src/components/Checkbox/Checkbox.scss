@@ -1,8 +1,11 @@
 @import "../../styles/vars";
 
+$checkbox-size: 1.2rem;
+$checkbox-inner-size: 0.75rem;
+
 @mixin checkbox-base {
 	border-radius: $radius-1;
-	transition: all 0.2s;
+	transition: all $duration-short;
 }
 
 .Checkbox {
@@ -19,12 +22,12 @@
 			-webkit-appearance: none;
 			-moz-appearance: none;
 			@include checkbox-base();
-			height: 0.8rem;
-			width: 0.8rem;
+			height: $checkbox-size;
+			width: $checkbox-size;
 			outline: none;
 			position: relative;
 			cursor: pointer;
-			border: 2px solid $color-primary;
+			border: 0.3rem solid $color-primary;
 
 			&:checked {
 				background-color: $color-primary;
@@ -39,8 +42,8 @@
 				top: 50%;
 				transform: translate(-50%, -50%);
 				@include checkbox-base();
-				height: 0.5rem;
-				width: 0.5rem;
+				height: $checkbox-inner-size;
+				width: $checkbox-inner-size;
 				background: url("../../images/tick.svg");
 			}
 
@@ -60,6 +63,6 @@
 		margin-left: $spacing-s;
 		color: $color-text;
 		font-weight: bold;
-		font-size: 0.6rem;
+		font-size: $sizing-xs;
 	}
 }

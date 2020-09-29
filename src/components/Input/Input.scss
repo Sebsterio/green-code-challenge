@@ -8,7 +8,7 @@
 	&__label {
 		display: block;
 		color: $color-text;
-		font-size: 0.65rem;
+		font-size: $sizing-m;
 		margin-bottom: $spacing-s;
 	}
 
@@ -26,7 +26,7 @@
 			box-shadow: $box-shadow-item;
 			color: $color-text;
 
-			transition: all 0.2s;
+			transition: all $duration-short;
 
 			&:hover {
 				box-shadow: $box-shadow-item-strong;

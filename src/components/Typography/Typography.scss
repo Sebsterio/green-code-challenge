@@ -4,12 +4,12 @@
 	margin-bottom: $spacing-xl;
 
 	&__heading {
-		font-size: 1.3rem;
+		font-size: $sizing-xl;
 		color: $color-text-strong;
 	}
 
 	&__sub-heading {
-		font-size: 0.7rem;
+		font-size: $sizing-l;
 		font-weight: normal;
 		margin-top: $spacing-s;
 		color: $color-text-weak;
