@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import useMountEffect from "./useMountEffect ";
 
 // Convert item to array if it isn't one already
 const arrayify = (item) => (Array.isArray(item) ? item : [item]);
@@ -22,7 +23,8 @@ const usePreloadAssets = (assets) => {
 
 	const abort = () => setNumAssetsLoaded(numAssetsToLoad);
 
-	useEffect(() => {
+	// Run useEffect once
+	useMountEffect(() => {
 		images.forEach((src) =>
 			preloadImage({
 				src,
@@ -30,7 +32,7 @@ const usePreloadAssets = (assets) => {
 				onerror: abort,
 			})
 		);
-	}, []);
+	}, [images, abort]);
 
 	return numAssetsLoaded === numAssetsToLoad;
 };
