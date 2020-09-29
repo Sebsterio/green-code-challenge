@@ -48,7 +48,7 @@ $checkbox-inner-size: 0.75rem;
 			}
 
 			&:not(:checked):after {
-				opacity: 0;
+				opacity: 0.001;
 			}
 
 			&:hover,

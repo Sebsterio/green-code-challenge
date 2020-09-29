@@ -27,7 +27,7 @@
 	&.animateOnEnter {
 		transition: opacity $duration-medium $timing-bounce,
 			transform $duration-medium $timing-bounce;
-		opacity: 0;
+		opacity: 0.001;
 		transform: scale(0.8);
 	}
 }
