@@ -5,11 +5,13 @@
 
 	&__heading {
 		font-size: $sizing-xl;
+		line-height: $sizing-xl; // fix MacOS bug
 		color: $color-text-strong;
 	}
 
 	&__sub-heading {
 		font-size: $sizing-l;
+		line-height: $sizing-l; // fix MacOS bug
 		font-weight: normal;
 		margin-top: $spacing-s;
 		color: $color-text-weak;
